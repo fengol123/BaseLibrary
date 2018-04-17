@@ -7,4 +7,5 @@ package com.mirkowu.baselibrary.app;
  */
 
 public class Constants {
+    public static final String MD5_KEY = "4E8ED165D86E5CEF561623723AD98D15";
 }

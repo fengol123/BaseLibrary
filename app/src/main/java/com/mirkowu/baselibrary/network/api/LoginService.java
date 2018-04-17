@@ -1,6 +1,8 @@
 package com.mirkowu.baselibrary.network.api;
 
 
+import com.mirkowu.baselibrary.bean.LoginResultBean;
+import com.mirkowu.baselibrary.bean.ResponseResult;
 import com.mirkowu.baselibrary.network.BaseBean;
 
 import io.reactivex.Observable;
@@ -10,30 +12,35 @@ import retrofit2.http.POST;
 
 
 public interface LoginService {
+    @FormUrlEncoded
+    @POST(HostUrl.LOGIN_APP_LOGIN)
+    Observable<ResponseResult<LoginResultBean>> login(@Field("phone") String reqAct,
+                                                      @Field("password") String userName
+    );
 
-    /**
-     * 登录
-     *
-     * @param loginType （必须）登录类型，1：QQ, 2: 微信, 3：微博, 4：手机号
-     * @param phone     （非第三方登录）手机号
-     * @param password  （非第三方登录）密码
-     * @return
-     */
+    //    /**
+    //     * 登录验证
+    //     * @param reqAct
+    //     * @param userName
+    //     * @param password
+    //     * @return
+    //     */
+    //    @FormUrlEncoded
+    //    @POST(HostUrl.LOGIN_APP_LOGIN)
+    //    Observable<ResponseResult<LoginResultBean>> login(@Field("reqAct") String reqAct,
+    //                                                      @Field("userName") String userName,
+    //                                                      @Field("password") String password
+    //    );
+
+
     @FormUrlEncoded
     @POST(HostUrl.LOGIN_APP_LOGIN)
     Observable<BaseBean<String>> loginPhone(@Field("loginType") int loginType,
-                                              @Field("phone") String phone,
-                                              @Field("password") String password
+                                            @Field("phone") String phone,
+                                            @Field("password") String password
     );
-    /**
-     * 登录
-     *
-     * @param loginType （必须）登录类型，1：QQ, 2: 微信, 3：微博, 4：手机号
-     * @param openid    （第三方登录）第三方登录时返回的唯一标识
-     * @param name      （第三方登录）用户名
-     * @param headerImg （第三方登录）用户头像
-     * @return
-     */
+
+
     @FormUrlEncoded
     @POST(HostUrl.LOGIN_APP_LOGIN)
     Observable<BaseBean<String>> loginThridParty(@Field("loginType") int loginType,

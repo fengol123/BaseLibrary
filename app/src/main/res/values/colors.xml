@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1E6D9B</color>
-    <color name="colorPrimaryDark">#1E6D9B</color>
+    <color name="colorPrimary">#46AEF7</color>
+    <color name="colorPrimaryDark">#46AEF7</color>
     <color name="colorAccent">#FF4081</color>
+    <!--全局通用的颜色值-->
+    <color name="colorBlue">#46AEF7</color>     <!-- 蓝色 -->
+    <color name="colorGreen">#5fc44b</color>    <!-- 绿色 -->
+    <color name="colorWhite">#fff</color>       <!-- 白色 -->
+    <color name="colorBlack">#000</color>       <!-- 黑色 -->
+
+    <color name="colorBlueTrans">#7f46AEF7</color>   <!-- 半透明主色调 -->
+    <color name="colorBg">#f2f2f2</color>            <!--页面背景色-->
+
+    <!--......................文字颜色........................-->
+    <!-- 主体文字（%87黑） -->
+    <color name="textColor87">#212121</color>
+    <!-- 减淡文字（%54黑） -->
+    <color name="textColor54">#757575</color>
+    <!-- 禁用文字（%40黑） -->
+    <color name="textColor40">#aaaaaa</color>
+    <!-- 禁用文字（%26黑） -->
+    <color name="textColor26">#bdbdbd</color>
+    <!-- 蓝色文字 -->
+    <color name="textColorBlue">#46AEF7</color>
+    <!-- 红色文字 -->
+    <color name="textColorRed">#E44217</color>
+    <!-- 主体文字（%30黑） -->
+    <color name="textColor30">#303030</color>
+    <!--......................透明色........................-->
+    <color name="colorTrans">#00000000</color>
+    <color name="colorTrans50">#17000000</color>
+    <color name="colorTrans55">#30000000</color>
+    <color name="colorTrans90">#cc000000</color>
+
+    <!--....................分割线灰色 列表的分割线统一用colorGray88.....................-->
+    <color name="colorGray47">#c2c2c2</color>
+    <color name="colorGray67">#929292</color>
+    <color name="colorGray87">#D8D8D8</color>
+    <color name="colorGray88">#EFEFEF</color>
+
+    <!--....................Toast背景色.....................-->
+    <color name="toast_background">#B0000000</color>
+
+
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="alivc_blue">#179df2</color>
+    <color name="color_title_blue">#46AEF7</color>
 </resources>

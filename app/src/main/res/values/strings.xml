@@ -1,3 +1,147 @@
 <resources>
-    <string name="app_name">实例Demo</string>
+    <string name="app_name">捕车</string>
+
+    <string name="inputUserAccount">请输入用户账号</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="forgetPassword">忘记密码</string>
+
+
+    <!--注册界面-->
+    <string name="accountInfo">账号信息</string>
+    <string name="accountName">账号名称</string>
+    <string name="phoneNum">手机号</string>
+    <string name="inputPhoneNum">请输入手机号</string>
+    <string name="password">密码</string>
+    <string name="inputPassword">请输入密码</string>
+    <string name="confirm">确认密码</string>
+    <string name="intputPswAgain">再次输入密码</string>
+    <string name="businessInfo">商户信息</string>
+    <string name="registSubmit">提交</string>
+    <string name="company">企业车商</string>
+    <string name="person">个人车商</string>
+    <string name="contactName">联系人姓名</string>
+    <string name="inputContactName">输入联系姓名</string>
+    <string name="localCity">所在城市</string>
+    <string name="inputLocalCity">输入所在城市</string>
+    <string name="regist_title">注册</string>
+    <!--登录界面-->
+    <string name="login_title">登录</string>
+    <string name="userAccount">账号</string>
+    <string name="loginPassword">密码</string>
+    <string name="input_login_account">请输入账号</string>
+
+    <string name="input_login_psw">请输入密码</string>
+    <string name="isEmpty_text">--</string>
+    <string name="find_psw">找回密码</string>
+    <string name="account_regist">账号注册</string>
+    <!--缴纳保证金-->
+    <string name="deposit_activity_name">缴纳保证金</string>
+    <string name="deposit_explanation">请向以下银行卡转账，转账成功后，请填写您的转账信息，后台人员核实后会通过审核。（保证金：6000元）</string>
+    <string name="my_bank_tip">账户名称：</string>
+    <string name="my_bank_account">广州捕车信息技术有限公司</string>
+    <string name="my_account_tip">账号：</string>
+    <string name="my_account_num">9550 8802 0937 9300 158</string>
+    <string name="my_bank_name_tip">开户行：</string>
+    <string name="my_bank_name">广发银行股份有限公司广州东站支行</string>
+    <string name="user_transfor_num_tip">您的汇款账号:</string>
+    <string name="input_money_transfor">请输入汇款账号</string>
+    <string name="user_bank_tip">开户行:</string>
+    <string name="input_bank_name">请输入开户行</string>
+    <string name="user_transfor_name">汇款人名称:</string>
+    <string name="input_tranfor_name">请输入汇款人名称</string>
+    <string name="user_transfor_num">汇款流水号:</string>
+    <string name="input_transfor_serial_num">请输入汇款流水号</string>
+    <string name="user_transfor_time">汇款时间:</string>
+    <string name="input_transfor_time">请输入汇款时间</string>
+    <string name="deposit_submit">提交</string>
+    <!--审核-->
+    <string name="check_activity_name">审核状态</string>
+    <string name="check_failure">审核不通过原因</string>
+    <string name="check_status_loading">努力审核中 请耐心等待</string>
+    <string name="pay_deposit">缴纳保证金</string>
+    <string name="temporarily_pay">暂不缴纳</string>
+    <string name="antenticate_tip">成为认证车商需要缴纳6000元押金；\n认证车商可参与竞价；</string>
+    <string name="regist_success_tip">恭喜！您提交的\n信息已成功注册</string>
+    <string name="check_loading">审核中</string>
+    <string name="check_loading_tip">努力审核中\n请耐心等待！</string>
+    <string name="check_success">注册成功</string>
+    <string name="check_fail">审核不通过</string>
+    <string name="check_fail_tip">抱歉！请您填写\n正确的信息资料</string>
+    <string name="check_fail_reason">照片不清晰\n信息未填写完整\n手机号码不正确</string>
+
+    <!--首页九宫格文字-->
+    <string name="main_check">帮检</string>
+    <string name="main_buche">拍车</string>
+    <string name="main_bangmai">帮卖</string>
+    <string name="main_financial">金融</string>
+    <string name="main_after_market">售后</string>
+    <string name="main_wealth">财富</string>
+    <string name="main_secretary">小秘</string>
+    <string name="main_erp">车源管理</string>
+    <string name="main_train">培训</string>
+    <string name="main_helper">帮手</string>
+    <!--车源信息详情tab 标题-->
+    <string name="info">信息</string>
+    <string name="skeleton">骨架</string>
+    <string name="appearance">外观</string>
+    <string name="upholstery">内饰</string>
+    <string name="engine_nacelle">发动机舱</string>
+    <string name="electronic_control">电控</string>
+    <string name="consumable">耗材</string>
+    <array name="car_source_info_details">
+        <item>信息</item>
+        <item>检测报告</item>
+    </array>
+    <array name="car_source_info">
+        <item>车辆信息</item>
+        <item>车况描述</item>
+    </array>
+    <!--车源信息详情信息-->
+    <string name="registration_time">上牌时间</string>
+    <string name="mileage">表显里程</string>
+    <string name="emission_standard">排放标准</string>
+    <string name="change_number">过户次数</string>
+    <string name="plate_number">车牌</string>
+    <string name="address_car">看车地址</string>
+    <string name="nature_vehicle">车辆性质</string>
+    <string name="owner_property">所有者性质</string>
+    <string name="fuel_type">燃油类型</string>
+    <string name="key">钥匙</string>
+    <string name="date_produced">生产日期</string>
+    <string name="car_colors">车身颜色</string>
+    <string name="cancel">取消</string>
+    <string name="te">辆，请到＂竞价管理＂页面查看</string>
+
+    <!--微信未安装-->
+    <string name="noInstalledWeChat">您未安装微信客户端</string>
+    <string name="isEmptyNote">备注：请于两天内凭本账号登记的身份证、手机号等相关资料前往交易地点办理手续并交款</string>
+
+    <!--检测模块-->
+    <string name="btn_checkcar_add">新增检测车辆</string>
+    <string name="check_wait">待检测</string>
+    <string name="check_record">检测记录</string>
+    <string name="check_center">检测中心</string>
+    <string name="tv_check_wait_site">预约检测点</string>
+    <string name="tv_check_wait_count">检测数量</string>
+    <string name="tv_check_wait_time">预约时间:</string>
+    <string name="tv_check_order_price">我的价格</string>
+    <string name="check_map_add">新增预约</string>
+    <string name="check_map_failure">定位失败</string>
+    <string name="check_add_title">新增预约</string>
+    <string name="check_add_notnull_count">检测数量不能为空</string>
+    <string name="check_add_notnull_address">地址不能为空</string>
+    <string name="check_add_notnull_tel">联系方式不能为空</string>
+    <string name="check_add_success">预约成功</string>
+    <string name="eventbus_checkadd_success">添加预约成功</string>
+    <string name="tv_check_add_count">检测数量</string>
+    <string name="tv_check_add_count_hint">请输入检测数量</string>
+    <string name="tv_check_add_address">我的地址</string>
+    <string name="tv_check_add_address_hint">请输入详细地址</string>
+    <string name="tv_check_add_tel">联系方式</string>
+    <string name="tv_check_add_tel_hint">请输入手机号码</string>
+    <string name="tv_check_add_time">预约时间:</string>
+    <string name="tv_check_add_submit">提交</string>
+    <string name="check_add_error_tel">请填写正确的手机号码</string>
+
 </resources>

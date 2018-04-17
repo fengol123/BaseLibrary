@@ -17,10 +17,10 @@ public interface HostUrl {
      * 文件访问地址
      * http://47.52.5.170:9001/zhuawawaMedia/
      */
-    String HOST_URL = "http://47.52.5.170:9002/zhuawawaApp/";
+    String HOST_URL = "http://120.76.52.250/";
 
     /*** 登录模块 */
-    String LOGIN_APP_LOGIN = "login/appLogin";//登录接口
+    String LOGIN_APP_LOGIN = "App/Login/login";//登录接口
 
 
 }

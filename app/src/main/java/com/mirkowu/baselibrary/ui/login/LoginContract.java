@@ -1,5 +1,6 @@
 package com.mirkowu.baselibrary.ui.login;
 
+import com.mirkowu.baselibrary.bean.LoginResultBean;
 import com.softgarden.baselibrary.base.IBaseDisplay;
 import com.softgarden.baselibrary.base.IBasePresenter;
 
@@ -10,19 +11,10 @@ import com.softgarden.baselibrary.base.IBasePresenter;
  */
 public class LoginContract {
     interface Display extends IBaseDisplay {
-        void getIndexData(String bean);
-
-        void switchOnOff(String bean);
-
-        void switchBluetooth(String bean);
+        void enterMain(LoginResultBean bean);
     }
 
     interface Presenter extends IBasePresenter<Display> {
-        void getIndexData();
-
-        void switchOnOff();
-
-        void switchBluetooth();
-
+        void login(String username,String pwd);
     }
 }

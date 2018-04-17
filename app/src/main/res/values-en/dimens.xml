@@ -1,0 +1,23 @@
+<resources>
+    <!--  Toolbar 高度 -->
+    <dimen name="toolbarHeight">48dp</dimen>
+    <dimen name="bomtomHeight">50dp</dimen>
+
+    <!-- 所有横向条的高度（自定义横向条使用）  -->
+    <dimen name="barHeight">50dp</dimen>
+
+    <!-- 所有页面常规的padding值 -->
+    <dimen name="padding">12dp</dimen>
+
+    <!-- radius大小 -->
+    <dimen name="radius5">5dp</dimen>
+
+    <!--文字大小-->
+    <dimen name="textSize12">12sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+
+    <!--  Tab 高度 -->
+    <dimen name="tabHeight">38dp</dimen>
+
+</resources>

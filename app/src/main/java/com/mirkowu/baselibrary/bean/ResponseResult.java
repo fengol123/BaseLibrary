@@ -1,45 +1,39 @@
 package com.mirkowu.baselibrary.bean;
 
 public class ResponseResult<T> {
-    public String retCode;
+    /**
+     * 状态码
+     * 0  获取失败
+     * 1  获取成功
+     */
+    public int status;
 
-    public String time;
+    /**
+     * 错误信息 ,成功则返回空
+     */
+    public String info;
+    /**
+     * 时间
+     */
+    public long time;
 
-    public String retMsg;
+    /**
+     * 数据
+     */
+    public T data;
 
-    public T result;
-
-    public String getTime() {
-        return time;
+    public ResponseResult(String data) {
+        this.data = (T) data;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    @Override
+    public String toString() {
+        return "BaseBean{" +
+                "status=" + status +
+                ", info='" + info + '\'' +
+                ", time=" + time +
+                ", data=" + data +
+                '}';
     }
-
-    public String getRetCode() {
-        return retCode;
-    }
-
-    public void setRetCode(String retCode) {
-        this.retCode = retCode;
-    }
-
-    public String getRetMsg() {
-        return retMsg;
-    }
-
-    public void setRetMsg(String retMsg) {
-        this.retMsg = retMsg;
-    }
-
-    public T getResult() {
-        return result;
-    }
-
-    public void setResult(T result) {
-        this.result = result;
-    }
-
 
 }
