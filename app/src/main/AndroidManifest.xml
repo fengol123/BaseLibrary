@@ -28,10 +28,6 @@
         <!-- Glide配置文件 -->
         <!-- android:windowSoftInputMode="adjustPan|stateHidden" -->
         <activity
-            android:name=".ui.MainActivity"
-            android:configChanges="locale|layoutDirection|keyboard">
-        </activity>
-        <activity
             android:name=".ui.login.LoginActivity"
             android:configChanges="locale|layoutDirection">
             <intent-filter>

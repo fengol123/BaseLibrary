@@ -30,46 +30,6 @@ public class NetworkTransformer<T> implements ObservableTransformer<ResponseResu
         this.mView = mView;
     }
 
-    //    @Override
-    //    public ObservableSource<T> apply(Observable<BaseBean<T>> upstream) {
-    //        return upstream
-    //                .subscribeOn(Schedulers.io())
-    //                .observeOn(AndroidSchedulers.mainThread())
-    //                .doOnSubscribe(disposable -> {
-    //                    if (!NetworkUtil.isConnected(mView.getContext())) {
-    //                        disposable.dispose();
-    //                        NetworkUtil.showNoNetWorkDialog(mView.getContext());
-    //                    } else {
-    //                        mView.showProgressDialog();
-    //                    }
-    //                })
-    //                .doFinally(() -> mView.hideProgressDialog())
-    //                .map(new Function<BaseBean<T>, BaseBean<T>>() {
-    //                    @Override
-    //                    public BaseBean<T> apply(BaseBean<T> baseBean) throws Exception {
-    //                        if (baseBean.code == 1) {
-    //                            return baseBean;
-    //                        } else {
-    //                            //                        if (baseBean.code == -1) {
-    //                            //                            mView.showReLoginDialog();
-    //                            //                        }
-    //                            throw new ApiException(baseBean.code, baseBean.msg);
-    //                        }
-    //                    }
-    //                })
-    //                .map(new Function<BaseBean<T>, T>() {
-    //                    @Override
-    //                    public T apply(BaseBean<T> tBaseBean) throws Exception {
-    //                        if (tBaseBean.data != null)
-    //                            return tBaseBean.data;
-    //                        //返回空数据时 抛出一个异常让CallBack处理
-    //                        throw new RxJava2NullException();
-    //                    }
-    //                })
-    //                .compose(mView.bindToLifecycle());
-    //
-    //    }
-
     @Override
     public ObservableSource<T> apply(Observable<ResponseResult<T>> upstream) {
         return upstream
@@ -90,8 +50,6 @@ public class NetworkTransformer<T> implements ObservableTransformer<ResponseResu
                         if (responseResult.status == 1) {
                             return responseResult;
                         } else if (responseResult.status == 0) {
-                            mView.hideProgressDialog();
-                            //TODO   ToastUtil.s(baseBean.errorMsg); 还是放到activity 和fragment 显示吧
                             throw Exceptions.propagate(new ApiException(responseResult.status, responseResult.info));
                         }
                         return responseResult;

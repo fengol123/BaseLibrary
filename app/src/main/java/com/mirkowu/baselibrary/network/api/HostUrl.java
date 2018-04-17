@@ -17,7 +17,7 @@ public interface HostUrl {
      * 文件访问地址
      * http://47.52.5.170:9001/zhuawawaMedia/
      */
-    String HOST_URL = "http://120.76.52.250/";
+    String HOST_URL = "http://guocai.test2.ruanjiekeji.com/";
 
     /*** 登录模块 */
     String LOGIN_APP_LOGIN = "App/Login/login";//登录接口

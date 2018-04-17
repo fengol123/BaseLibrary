@@ -27,43 +27,4 @@ public class LoginPresenter extends BasePresenter<LoginContract.Display> impleme
                 });
     }
 
-    //
-    //    @Override
-    //    public void getIndexData() {
-    ////        RetrofitClient.getHomeService()
-    ////                .getIndexData()
-    ////                .compose(new NetworkTransformer<>(mView))
-    ////                .subscribe(new RxCallback<IndexBean>() {
-    ////                    @Override
-    ////                    public void onSuccess(@Nullable IndexBean data) {
-    ////                        mView.getIndexData(data);
-    ////                    }
-    ////                });
-    //    }
-    //
-    //    @Override
-    //    public void switchOnOff() {
-    ////        RetrofitClient.getHomeService()
-    ////                .switchOnOff()
-    ////                .compose(new NetworkTransformer<>(mView))
-    ////                .subscribe(new RxCallback<String>() {
-    ////                    @Override
-    ////                    public void onSuccess(@Nullable String data) {
-    ////                        mView.switchOnOff(data);
-    ////                    }
-    ////                });
-    //    }
-    //
-    //    @Override
-    //    public void switchBluetooth() {
-    ////        RetrofitClient.getHomeService()
-    ////                .switchBluetooth()
-    ////                .compose(new NetworkTransformer<>(mView))
-    ////                .subscribe(new RxCallback<String>() {
-    ////                    @Override
-    ////                    public void onSuccess(@Nullable String data) {
-    ////                        mView.switchBluetooth(data);
-    ////                    }
-    ////                });
-    //    }
 }
